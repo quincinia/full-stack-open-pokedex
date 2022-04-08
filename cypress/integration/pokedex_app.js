@@ -6,7 +6,7 @@ describe('Pokedex', function() {
   })
 
   it('check ivysaur page', function() {
-    cy.visit('/pokemon/ivysaur')
+    cy.contains('ivysaur').click()
     cy.contains('chlorophyll')
   })
 })
